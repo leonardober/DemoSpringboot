@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--ctrl+shift+p para inicializar spring boot-->
+<!--tambien se usa ver paleta de comandos-->
+<!--Sprint inizializer create maven proyect-->
+<!--version spring boot 3.0.4 luego java nombre proyecto por defectoluego nombre id del proyecto Demo-->
+<!--archivos jar, version 17 java-->
+<!--insertar dependencia spring web-->
+<!--nos pide donde almacenar la carpeta en mis documentos generate new folder-->
+<!--luego creamos archivo html-->
+<!--escribimos html escogemos 5  o !+enter-->
+<!--Alt+z justifica identacion-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--CDN d bootstap click en logo bootstrap B y copiamos linkCDN debajo de meta datos-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"></link>
+    <title>Mascotas Felices</title>
+</head>
+<body>
+  <!--buscamos y copiamos navbar de bootstrap-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Logo</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Mision y Vision</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Servicios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--Copiamos carousel debajo del cierre de navbar-->
+<div id="carouselExampleFade" class="carousel slide carousel-fade">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://i.pinimg.com/474x/7b/a3/9b/7ba39ba0d2253e641d3cb054005d9241.jpg">
+    </div>
+    <div class="carousel-item">
+      <!--Insertamos image address dentro de las comillas  con archivo jpg-->
+      <img src="https://i.pinimg.com/736x/14/d4/7e/14d47e7619b6f71d16701a86a73e8588.jpg">
+    </div>
+    <div class="carousel-item">
+      <img src="https://i.pinimg.com/736x/50/6c/ed/506cedbfddf58610bbc609a0c810ff6d.jpg">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">nuestras politicas</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!--Copiamos footer debajo del cierre de carousel-->
+<div class="card">
+  <div class="card-header">
+    Featured
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Special title treatment</h5>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+<!--Nota para cambiar puerto se entra application properties y se coloca server.port=numero de puerto que queramos
+Otra forma de cambiar numero de puerto entramos en demmo aplications y debajo de donde dice public static void main
+ clocar System.setproperty("server.port","numero de puerto ejemplo 3040")-->
+<!--click en logo bootstrap B e insertamos el script para animacionesencima del body-->
+<script src ="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
